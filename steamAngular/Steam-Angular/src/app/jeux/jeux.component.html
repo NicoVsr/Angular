@@ -1,0 +1,26 @@
+
+
+
+<table>
+  <thead>
+<tr>
+  <th>name</th>
+  <th>summary</th>
+  <th>genres</th>
+  <th>screenshots</th>
+  <th>cover</th>
+  <th>video</th>
+</tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>{{jeux[this.id]['name']}}</td>
+      <td>{{jeux[this.id]['summary']}}</td>
+      <td>{{jeux[this.id]['genres']}}</td>
+      <td>{{jeux[this.id]['screenshots']['url']}}</td>
+      <td><img src="{{jeux[this.id]['cover']['url']}}" alt=""></td>
+      <td>{{jeux[this.id]['videos.name']}}</td>
+      <td>{{jeux[this.id]['videos']['video_id']}}</td>
+    </tr>
+  </tbody>
+</table>

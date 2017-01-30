@@ -1,0 +1,24 @@
+
+<app-categorie></app-categorie>
+
+
+<table >
+  <thead>
+<tr>
+  <th>id</th>
+  <th>name</th>
+
+  <th>cover</th>
+
+</tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let jeu of jeux; let id = index;">
+      <td>{{id}}</td>
+      <td>{{jeu['name']}}</td>
+      <td><img src="{{jeu['cover']['url']}}" alt=""></td>
+      <td>{{jeu['genres']}}</td>
+      <td><a routerLink="/jeux/{{id}}" ><button type="button">En savoir +</button></a></td>
+    </tr>
+  </tbody>
+</table>

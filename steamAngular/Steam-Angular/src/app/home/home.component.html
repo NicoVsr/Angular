@@ -1,0 +1,8 @@
+
+
+<table>
+  <tr *ngFor=" let jeu of jeux | slice:0:3">
+    <td>{{jeu['name']}}</td>
+    <td><img src="{{jeu['cover']['url']}}" alt=""></td>
+  </tr>
+</table>
